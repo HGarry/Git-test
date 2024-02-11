@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let user = {
+      //     name: "John",
+      //     age: 30,
+      //     parent: {
+      //       fatherName: "Jobs",
+      //       motherName: "Amellia",
+      //     },
+      //   };
+
+      //   delete user.age;
+      //   console.log(user);
+
+      let user = new Object();
+      user.name = "John";
+      user.age = 30;
+      console.log(user);
+
+      function myFruit(name, price, city) {
+        this.fruitName = name;
+        this.fruitPrice = price;
+        this.city = city;
+      }
+
+      let myObj = new myFruit("Apple", "$10", "Yangon");
+      console.log(myObj);
+      console.log(myObj.fruitName);
+    </script>
+  </body>
+</html>

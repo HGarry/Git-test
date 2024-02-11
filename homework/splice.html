@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // The Array.splice() method adds array elements:
+
+      let fruits = ["banana", "orange", "apple", "mango"];
+      fruits.splice(2, 0, "lemon", "kiwi");
+
+      console.log(fruits);
+
+      //   slice() extracts a part of a string and returns the extracted part:
+
+      let text = "Hello world";
+      let result = text.slice(2, 10);
+
+      console.log(result);
+
+      //   The concat() method concatenates (joins) two or more arrays:
+
+      let first = ["Hello", "world"];
+      let sec = ["white", "black", "blue"];
+      let third = ["brown"];
+
+      let colors = sec.concat(first, third);
+
+      console.log(colors);
+
+      //   join() returns an array as a string:
+
+      let fruitName = ["mango", "orange", "strawberry", "pineapple"];
+      let texts = fruitName.join();
+
+      console.log(texts);
+
+      //   The Array.reverse() method reverses the order of the elements in an array.
+
+      let childern = ["mgmg", "zawzaw", "aungaung", "meowmeow"];
+
+      console.log(childern.reverse());
+    </script>
+  </body>
+</html>

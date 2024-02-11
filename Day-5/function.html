@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function greet1() {
+        let fruit = "apple";
+        return fruit;
+      }
+      console.log(greet1());
+
+      function greet2() {
+        let fruit = "apple";
+        console.log(fruit);
+      }
+      greet2();
+
+      let myFunc = function () {
+        console.log("Hello");
+        return "How are you?";
+      };
+      console.log(myFunc());
+
+      (function username() {
+        console.log("Hello user");
+      })();
+
+      let username = myFun();
+      function myFun() {
+        console.log("myFunc");
+      }
+
+      function user(name, age) {
+        console.log(name, age);
+      }
+      user("John", 30);
+      user("Su", 20);
+
+      let user = {
+        age: 25,
+        name: "John",
+        myFunc: function fruit() {
+          return this;
+        },
+      };
+      console.log(user.myFunc());
+      console.log(user.myFunc().name);
+      console.log(user.myFunc().age);
+
+      let fruit = {
+        myFruit: function () {
+          return this;
+        },
+      };
+
+      let fruit1 = {
+        name: "apple",
+        price: "$20",
+      };
+
+      let fruit2 = {
+        name: "orange",
+        price: "$20",
+      };
+      console.log(fruit.myFruit.call(fruit1));
+      console.log(fruit.myFruit.call(fruit2));
+    </script>
+  </body>
+</html>
